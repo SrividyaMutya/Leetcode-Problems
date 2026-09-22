@@ -8,8 +8,8 @@ public:
         int time=0;
         while(t[k]>0){
             int p=q.front();
+             t[p]--;
             q.pop();
-            t[p]--;
             time++;
             if(t[p]>0){
                 q.push(p);
